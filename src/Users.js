@@ -18,6 +18,8 @@ export default function Users() {
       return <div> Cargando...</div>
    }
 
+   console.log('Renderizando api reqres')
+   console.log(queryUser.isFetching) 
 
    return (
       <ul>
