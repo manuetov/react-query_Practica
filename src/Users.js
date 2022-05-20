@@ -5,9 +5,8 @@ import { useQuery } from 'react-query'
 
 export default function Users() {
    const queryUser= useQuery('users', async function () {
-      const response = await fetch('https://reqres.in/api/users?page=2')
+      const response = await fetch('https://reqres.in/api/users')
       console.log(response)
-      // const response1 = await fetch(usuarios)
       return response.json()
    })
 
